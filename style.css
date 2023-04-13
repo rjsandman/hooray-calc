@@ -1,0 +1,65 @@
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    padding:4px;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    border-radius: 10px;
+
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #111bd9, 0 0 40px #111bd9, 0 0 50px #111bd9, 0 0 60px #111bd9, 0 0 70px #111bd9;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #6067ea, 0 0 40px #6067ea, 0 0 50px #6067ea, 0 0 60px #6067ea, 0 0 70px #6067ea, 0 0 80px #6067ea;
+    }
+  }
+
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    
+}
+
+.buttons {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin:2px;
+    
+}
+
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+
+.button:hover {
+    background-color: #6067ea;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
